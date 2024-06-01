@@ -19,7 +19,7 @@ const game = {
 
 //console.dir(pokemon, { maxArrayLength: null })
 //console.log(pokemon[58]);
-console.log(game)
+//console.log(game)
 
 /*
 Exercise 3
@@ -103,7 +103,7 @@ Solve Exercise 8 here:
 */
 
 for (let object of game.party) {
-  //console.log(object.name);
+  console.log(object.name);
 }
 
 /*
@@ -117,7 +117,7 @@ Solve Exercise 9 here:
 
 for (let object of pokemon) {
   if (object.starter === true) {
-    //console.log(object.name);
+    console.log(object.name);
   }
 }
 
@@ -134,7 +134,7 @@ Solve Exercise 10 here:
 */
 
 game.catchPokemon = function(pokemonObj) {
-  //game.party.push(pokemonObj);  //commented out so console not too cluttered.
+  game.party.push(pokemonObj); 
 };
 
 game.catchPokemon(pokemon[132]);
@@ -157,7 +157,7 @@ game.catchPokemon = function(pokemonObj) {
   game.items[1].quantity -= 1;
 };
 
-game.catchPokemon(pokemon[132]);
+game.catchPokemon(pokemon[58]);
 
 /*
 Exercise 12
@@ -208,7 +208,7 @@ game.gymStatus = function() {
       gymTally.incomplete += 1;
     }
   }
-  //console.log(gymTally);  //commented out so console not too cluttered.
+  console.log(gymTally);  //commented out so console not too cluttered.
 };
 
 game.gymStatus();
@@ -246,3 +246,13 @@ for (let object of game.gyms) {
 }
 
 game.gymStatus();
+
+/*
+Exercise 16
+1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
+
+
+Solve Exercise 16 here:
+*/
+
+console.log(game);
